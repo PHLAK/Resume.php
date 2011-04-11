@@ -23,11 +23,7 @@
                 ability to work efficiently in a team centric environment.
 summery;
             
-            while (strstr($summery, '  ')) {
-                $formattedSummery = str_replace('  ', ' ', trim($summery));
-            }
-            
-            return $formattedSummery;
+            return $summery;
         }
         
         public function getExperience() {
