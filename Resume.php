@@ -1,5 +1,5 @@
 <?php
-    class ChrisKankiewiczResume {
+    class Resume {
         
         public function getContactInfo() {
             $contactInfo = array(
@@ -28,6 +28,17 @@ summery;
         
         public function getExperience() {
             $experience = array();
+            
+            $experience[] = array(
+                'name'        => 'Arizona State University',
+                'position'    => 'Web Application Developer',
+                'date_start'  => 'April 2011',
+                'date_end'    => 'Present',
+                'description' => array(
+                    '1' => 'Developed, managed and maintained complex PHP based web applications.',
+                    '2' => 'Conceptualized, designed and implemented detailed site layouts.'
+                )
+            );
             
             $experience[] = array(
                 'name'        => 'Southwest Medical & Rehab',

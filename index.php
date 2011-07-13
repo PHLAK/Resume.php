@@ -1,4 +1,4 @@
-<? include('Resume.php'); $resume = new ChrisKankiewiczResume(); ?>
+<? include('Resume.php'); $resume = new Resume(); ?>
     
 <? print_r($resume->getContactInfo()); ?>
 
