@@ -136,7 +136,7 @@ summery;
             $achievements[] = 'Award: Eagle scout';
             $achievements[] = 'Project: UberGallery (http://www.ubergallery.net)';
             $achievements[] = 'Project: Directory Lister (http://www.directorylister.com)';
-            $achievements[] = 'Attended Defcon Security Convention 2005 - 2009';
+            $achievements[] = 'Attended Defcon Security Convention 2005 - 2009, 2011';
             
             return $achievements;
         }
