@@ -1,23 +1,24 @@
-<? include('resources/Resume.php'); $resume = new Resume(); ?>
+<?php
     
-<? print_r($resume->getContactInfo()); ?>
-
-<hr/>
-
-<?= $resume->getSummery(); ?>
-
-<hr/>
-
-<? print_r($resume->getExperience()); ?>
-
-<hr/>
-
-<? print_r($resume->getQualifications()); ?>
-
-<hr/>
-
-<? print_r($resume->getEducation()); ?>
-
-<hr/>
-
-<? print_r($resume->getAchievements()); ?>
+    // Include the Resume class
+    include('resources/Resume.php');
+    
+    // Initialize the Resume object
+    $resume = new Resume();
+    
+    // // Define theme path
+    // if (!defined('THEMEPATH')) {
+    //     define('THEMEPATH', $resume->getThemePath());
+    // }
+    //     
+    // // Set path to theme index
+    // $themeIndex = $gallery->getThemePath(true) . '/index.php';
+    //         
+    // // Initialize the theme
+    // if (file_exists($themeIndex)) {
+    //     include($themeIndex);
+    // } else {
+    //     die('ERROR: Failed to initialize theme');
+    // }
+    
+?>
