@@ -7,6 +7,8 @@
             
             $db = new Database();
             
+            $db->readJobHistory();
+            
         }   
     }
 ?>

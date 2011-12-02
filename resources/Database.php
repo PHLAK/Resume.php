@@ -21,24 +21,24 @@
             
             // Connect to database
             try {
-                $db = new PDO("mysql:host=$this->db_host;dbname=$this->db_name", $this->db_user, $this->db_pass);
+                $this->db = new PDO("mysql:host=$this->db_host;dbname=$this->db_name", $this->db_user, $this->db_pass);
             } catch(PDOException $e) {
                 echo $e->getMessage();
             }
             
-            $result = $db->query("SELECT * FROM contact_info");
-            
-            $cols = $result->columnCount();           // Number of returned columns
-
-            echo 'Number of returned columns: '. $cols. '<br />';
-            
-            var_dump($result);
-            
-            foreach($result as $row) {
-                print_r($row);
-            }
-            
-            $db = NULL;
+            // $result = $db->query("SELECT * FROM contact_info");
+//             
+            // $cols = $result->columnCount();           // Number of returned columns
+// 
+            // echo 'Number of returned columns: '. $cols. '<br />';
+//             
+            // var_dump($result);
+//             
+            // foreach($result as $row) {
+                // print_r($row);
+            // }
+//             
+            // $db = NULL;
             
         }
         
@@ -48,6 +48,19 @@
         function __destruct() {
             
             // Close database connections
+            $this->db = NULL;
+            
+        }
+        
+        
+        
+        function readJobHistory() {
+                
+            $result = $this->db->prepare('SELECT * FROM job_history WHERE user_id_linker = 1');
+            
+            $whatever = $this->db->exec();
+            
+            return var_dump($whatever);
             
         }
         
