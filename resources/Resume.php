@@ -9,6 +9,7 @@ class Resume {
     private $_resume    = NULL;
     private $_themeName = 'plain';
     
+    
     /**
      * Resume.php construct function. Runs on object creation.
      */
@@ -29,6 +30,7 @@ class Resume {
         
     }
     
+    
     /**
      * getContactInfo()
      */
@@ -37,6 +39,7 @@ class Resume {
         return $this->_resume['contact_info'];
         
     }
+    
     
     /**
      * getSummery()
@@ -47,6 +50,7 @@ class Resume {
         
     }
     
+    
     /**
      * getExperience()
      */
@@ -55,6 +59,7 @@ class Resume {
         return $this->_resume['experience'];
         
     }
+
     
     /**
      * getQualifications()
@@ -74,6 +79,7 @@ class Resume {
         return $this->_resume['education'];
         
     }
+    
 
     /**
      * getAchievements()
@@ -84,6 +90,7 @@ class Resume {
         
     }
     
+    
     /**
      * Returns the theme name.
      * 
@@ -93,6 +100,7 @@ class Resume {
         // Return the theme name
         return $this->_themeName;
     }
+    
     
     /**
      * Returns the path to the chosen theme directory.
@@ -114,6 +122,7 @@ class Resume {
         
         return $themePath;
     }
+    
     
     /**
      * Compares two paths and returns the relative path from one to the other
