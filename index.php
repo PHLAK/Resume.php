@@ -1,23 +1,24 @@
-<? include('resources/Resume.php'); $resume = new Resume(); ?>
+<?php
     
-<? print_r($resume->getContactInfo()); ?>
+    // Include the UberGallery class
+    include('resources/Resume.php');
+    
+    // Initialize the UberGallery object
+    $resume = new Resume();
 
-<hr/>
+    // Define theme path
+    if (!defined('THEMEPATH')) {
+        define('THEMEPATH', $resume->getThemePath());
+    }
 
-<?= $resume->getSummery(); ?>
+    // Set path to theme index
+    $themeIndex = $resume->getThemePath(true) . '/index.php';
+    
+    // Initialize the theme
+    if (file_exists($themeIndex)) {
+        include($themeIndex);
+    } else {
+        die('ERROR: Failed to initialize theme');
+    }
 
-<hr/>
-
-<? print_r($resume->getExperience()); ?>
-
-<hr/>
-
-<? print_r($resume->getQualifications()); ?>
-
-<hr/>
-
-<? print_r($resume->getEducation()); ?>
-
-<hr/>
-
-<? print_r($resume->getAchievements()); ?>
+?>
