@@ -32,6 +32,16 @@ class Resume {
     
     
     /**
+     * getAllInfo()
+     */
+    public function getAllInfo() {
+        
+        return $this->_resume;
+        
+    }
+    
+    
+    /**
      * getContactInfo()
      */
     public function getContactInfo() {

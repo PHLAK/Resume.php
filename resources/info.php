@@ -14,6 +14,7 @@ return array(
         'city'         => 'Phoenix',
         'state_full'   => 'Arizona',
         'state_short'  => 'AZ',
+        'zip_code'     => '85032',
         'home_phone'   => '',
         'cell_phone'   => '623-252-6855',
         'email'        => 'Chris@ChrisKankiewicz.com',
@@ -89,6 +90,24 @@ return array(
 
     ),
     
+    // Qualifications
+    'qualifications' => array(
+    
+        'Unix / Linux based operating systems',
+        'LAMP environments',
+        'All Windows operating systems',
+        'PC hardware and networking',
+        'Photoshop',
+        'Aptana / Eclipse IDE',
+        '(X)HTML / CSS',
+        'Git Version Control',
+        'PHP / MySQL',
+        'Zend Framework',
+        'Search Engine Optimization (SEO)',
+        'jQuery / JavaScript',
+        'Wordpress / Drupal'
+        
+    ),
     
     // Education
     'education' => array(
@@ -111,25 +130,6 @@ return array(
                 'Bachelors of Science Degree in Network and Communication Management'
             )
         )
-        
-    ),
-    
-    // Qualifications
-    'qualifications' => array(
-    
-        'Unix / Linux based operating systems',
-        'LAMP environments',
-        'All Windows operating systems',
-        'PC hardware and networking',
-        'Photoshop',
-        'Aptana / Eclipse IDE',
-        '(X)HTML / CSS',
-        'Git Version Control',
-        'PHP / MySQL',
-        'Zend Framework',
-        'Search Engine Optimization (SEO)',
-        'jQuery / JavaScript',
-        'Wordpress / Drupal'
         
     ),
     
